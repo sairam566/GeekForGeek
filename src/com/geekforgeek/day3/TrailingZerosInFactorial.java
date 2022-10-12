@@ -5,10 +5,12 @@ public class TrailingZerosInFactorial {
 	public static void main(String[] args) {
 	
 		int inputNo = 16;
-		int factoial = factorial(inputNo);
+		//int factoial = factorial(inputNo);
 		//int zeroCount = countZerosV1(factoial);
-		int zeroCount = countZerosV2(factoial);
-		System.out.println("Zeros In Factorial "+factoial+" is "+zeroCount);
+		//int zeroCount = countZerosV2(factoial);
+		//System.out.println("Zeros In Factorial "+factoial+" is "+zeroCount);
+		int zeroCount = countTrailingZerosV2(inputNo);
+		System.out.println("Zeros In Factorial "+inputNo+" is "+zeroCount);
 		
 	}
 	
@@ -57,6 +59,12 @@ public class TrailingZerosInFactorial {
 	 *  Need to apply mathematical formula for the solution and avoid
 	 *  overflow problem.
 	 */
-	
+	private static int countTrailingZerosV2(int input) {
+		int counter = 0;
+		for(int i=5;i<=input;i=i*5) {
+			counter = counter +(input/i);
+		}
+		return counter;
+	}
 
 }
