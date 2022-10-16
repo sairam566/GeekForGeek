@@ -41,7 +41,7 @@ public class GCD {
 	}
 	
 	/*
-	 * Optimal approach
+	 * Optimal approach: Using Euclidean Algorithm
 	 */
 	private static int optimalApproach_2(int a,int b) {
 		if(b==0) {
