@@ -8,7 +8,11 @@ public class SearchElement {
 		int index = searchGivenIndex(arr, elementToSearch, elementToSearch);
 		System.out.println("The index of element " + elementToSearch + " is: " + index);
 	}
-
+	
+	/*
+	 * Time Complexity : O(N)
+	 * Linear Growth
+	 */
 	static int searchGivenIndex(int[] arr, int arrLength, int elementToSearch) {
 		for (int i = 0; i < arrLength; i++) {
 			if (arr[i] == elementToSearch) {
