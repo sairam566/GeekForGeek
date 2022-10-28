@@ -28,6 +28,11 @@ public class ArrayPositionShift {
 		}
 	}
 
+	/*
+	 * Time Complexity: O(n)
+	 * Insert at the end: O(1)
+	 * Insert at the Beginning: O(n)
+	 */
 	static int insert(int[] arr, int noOfElements, int position, int arrSize, int number) {
 
 		if (noOfElements == arrSize) {
